@@ -41,19 +41,9 @@ ul {
 }
 
 .container {
-  width: 1200px;
+  max-width: 480px;
+  padding: 0 15px;
   margin: 0 auto;
-}
-
-.container--header {
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
-
-.container--footer {
-  padding-top: 60px;
-  display: flex;
 }
 
 .section {
