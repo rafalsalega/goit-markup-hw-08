@@ -1,0 +1,49 @@
+/* Features */
+    
+  .features-item {
+      margin-right: 20px;
+      font-size: 14px;
+      width: 270px;
+  }
+  
+  .features-item__box {
+    background-color: var(--white-grey);
+    height: 120px;
+  width: 270px;
+  left: 215px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .features-item__tittle {
+    
+    line-height: 1.42;
+    font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  }
+  
+  .features-item__text {
+    color: var(--grey);
+  }
+  
+  .features-item__box--antenna {
+    width: 65.32px;
+    height: 70px
+  }
+  .features-item__box--clock {
+    width: 66.96px;
+    height: 70px
+  }
+  
+  .features-item__box--diagram {
+    width: 53.69px;
+    height: 70px
+  }
+  
+  .features-item__box--astronaut {
+    width: 54.83px;
+    height: 60.66px
+  }

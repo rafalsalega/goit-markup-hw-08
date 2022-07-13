@@ -1,0 +1,11 @@
+.header {
+  height: 80px;
+  border-bottom: 1px solid var(--white-grey);
+}
+.header__content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
