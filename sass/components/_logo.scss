@@ -6,16 +6,16 @@
     line-height: 1.19;
     text-decoration: none;
     margin-right: 53px;
-  }
   
-  .logo--dark-theme {
+  &--dark-theme {
     color: var(--black);
   }
   
-  .logo--white-theme {
+  &--white-theme {
     color: var(--white)
   }
   
-  .logo__txt-web {
+  &__txt-web {
     color: var(--blue);
   }
+}

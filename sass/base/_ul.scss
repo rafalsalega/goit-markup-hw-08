@@ -2,23 +2,24 @@
     list-style-type: none;
     display: flex ;
     justify-content: space-between;
-}
 
-.list--socials {
+
+&--socials {
         margin-right: 32px;
         margin-left: 32px;
         margin-bottom: 18px;
         padding-bottom: 12px;
 }
     
-.list--footer-socials {
+&--footer-socials {
     gap: 10px;
   }
-  .list--filters {
+&--filters {
     justify-content: center;
       margin-bottom: 50px;
   }
-  .list--projects {
+&--projects {
     flex-wrap: wrap;
     row-gap: 30px;
   }
+}

@@ -25,7 +25,7 @@
   border-radius: 4px;
   }
   
-  .modal-close-button {
+  .modal-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -40,9 +40,10 @@
     background-color: var(--white);
     cursor: pointer;
     z-index: 1000;
+
+    &__button {
+      height: 30px;
+      width: 30px;
+    }
   }
   
-  .close-button {
-    height: 30px;
-    width: 30px;
-  }

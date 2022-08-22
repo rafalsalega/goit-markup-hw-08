@@ -7,39 +7,41 @@
     border: 1px solid var(--white-grey);
     transition-property: box-shadow;
    position: relative;
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
-  &:hover,
-  &:focus { box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
-   0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-   transition-duration: 250ms;
-   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
+    &:hover,
+    &:focus { box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-  .project-card__img {
-    width: 370px;
-    height: 294px;
-  }
-  
-  .project-card__title {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    margin-left: 24px;
-    margin-right: 24px;
-    display: block;
-    margin-block-start: 20px;
-    margin-block-end: 4px;
-    text-transform: none;
-  }
-  .project-card__object {
-      line-height: 1.875;
-      color: var(--grey);
+    &__img {
+      width: 370px;
+      height: 294px;
+    }
+    
+    &__title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
       margin-left: 24px;
       margin-right: 24px;
-      margin-bottom: 20px;
-      margin-block-start: 0px;
-  }
+      display: block;
+      margin-block-start: 20px;
+      margin-block-end: 4px;
+      text-transform: none;
+    }
+
+    &__object {
+        line-height: 1.875;
+        color: var(--grey);
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 20px;
+        margin-block-start: 0px;
+    }
+}
   
   .projects-hover-overlay {
     position: absolute;
@@ -50,21 +52,24 @@
     position: absolute;
     overflow: hidden;
     transition-property: height;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__txt {
+      display: inline;
+      padding: 45px 49px 45px 24px;
+      margin-top: 0;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.03em;
+      text-align: left;
+      color: var(--white);
+      position: absolute;
+    }
   }
+
   .project-card:hover .projects-hover-overlay {
   height: 300px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
   
-  .projects-hover-overlay__txt {
-    display: inline;
-    padding: 45px 49px 45px 24px;
-    margin-top: 0;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    text-align: left;
-    color: var(--white);
-    position: absolute;
-  }
