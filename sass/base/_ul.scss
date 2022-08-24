@@ -21,7 +21,10 @@
 }
 &--filters {
   justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    justify-content: flex-start;
+    gap: 8px;
+    row-gap: 15px;
 }
 &--projects {
   flex-wrap: wrap;
@@ -55,11 +58,13 @@
   }
   &--filters {
     justify-content: center;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+      gap: 8px;
   }
   &--projects {
     flex-wrap: wrap;
     row-gap: 30px;
+    justify-content: flex-start;
   }
 }
 }
