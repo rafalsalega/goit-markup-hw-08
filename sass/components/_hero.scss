@@ -4,7 +4,7 @@
     background-color: var(--dark-grey);
     min-height: 400px;
     height: 400px;
-    background: url("../images/team_image.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background: url("/images/Mobile/Hero.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ margin: 0 114px 0 114px;
     background-color: var(--dark-grey);
     min-height: 400px;
     height: 400px;
-    background: url("../images/team_image.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+    background: url("/images/Tablet/tab\ hero.jpg"), linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,4 +130,29 @@ margin: 0 114px 0 114px;
   }
 
 }
+}
+// Retina
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/Mobile/Hero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px)  and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/Tablet/tab\ hero@2x.jpg);
+  }
 }

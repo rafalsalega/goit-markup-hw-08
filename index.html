@@ -163,9 +163,19 @@
         <div class="container">
         <h2 class="section__title">Nasz zespół</h2>
         <ul class="list">
-          <li class="team-card">
-            <img class="team-card__img"
-              src="images/1_man.jpg"
+          <li class="team-card"> 
+            <img class="team-card__img" 
+            src="/images/1_man.jpg"
+            src="/images/Mobile/product designer.jpg"
+            srcset="
+            /images/Mobile/product designer.jpg   450w,
+            /images/Mobile/product designer@2x.jpg   900w,
+            /images/Tablet/tab product designer.jpg   354w,
+            /images/Tablet/tab product designer@2x.jpg   708w,
+            /images/1_man.jpg 270w"
+         sizes="(min-width: 1200px) 270px,
+                (min-width: 768px) calc(50vw - 30px),
+                (min-width: 320px) calc(100vw - 30px)"
               alt="mezczyzna"
             />
             <h3 class="team-card__name">John Doe</h3>
