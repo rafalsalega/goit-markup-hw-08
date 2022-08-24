@@ -30,6 +30,12 @@
   flex-wrap: wrap;
   row-gap: 30px;
 }
+&--hamburger {
+  flex-direction: column;
+  gap: 0;
+  z-index: 800;
+}
+
 }
 
 
