@@ -1,5 +1,35 @@
+ // // Mobile styles
+@media screen and (max-width: 767px) {
+  .footer {
+    background-color: var(--dark-grey);
+    // height: 252px;
+    margin: 0 auto;
+  }
+
+}
+// Tablet styles
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    background-color: var(--dark-grey);
+    // height: 252px;
+    margin: 0 auto;
+  }
+
+}
+
+// //Desktop styles
+
+@media screen and (min-width: 1200px) {
   .footer {
     background-color: var(--dark-grey);
     height: 252px;
     margin: 0 auto;
   }
+
+}
+
+ 
+ 
+ 
+ 

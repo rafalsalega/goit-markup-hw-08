@@ -1,14 +1,53 @@
-
+// // Mobile styles
+@media screen and (max-width: 767px) {
   .team-card {
     background-color: var(--white);
-    width: 270px;
+    width: 450px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-  
+
     &__img {
       border-radius: 0px;
-      width: 270px;
-      height: 260px;
+      width: 450px;
+      height: 460px;
+      margin-bottom: 30px;
+    }
+  
+    &__name {
+      line-height: 1.1875;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+    
+    &__job {
+      color: var(--grey);
+      line-height: 1.1875;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+
+}
+// Tablet styles
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-card {
+    background-color: var(--white);
+    width: 354px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+
+    &__img {
+      border-radius: 0px;
+      width: 354px;
+      height: 374px;
+      margin-bottom: 30px;
     }
   
     &__name {
@@ -19,11 +58,57 @@
       font-size: 16px;
       text-align: center;
       letter-spacing: 0.03em;
+      margin-bottom: 10px;
+      
     }
     
     &__job {
       color: var(--grey);
       line-height: 1.1875;
       text-align: center;
+      margin-bottom: 16px;
     }
   }
+
+
+ }
+
+// //Desktop styles
+
+@media screen and (min-width: 1200px) {
+  .team-card {
+    background-color: var(--white);
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  
+    &__img {
+      border-radius: 0px;
+      width: 270px;
+      height: 260px;
+      margin-bottom: 30px;
+    }
+  
+    &__name {
+      line-height: 1.1875;
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      margin-bottom: 10px;
+    }
+    
+    &__job {
+      color: var(--grey);
+      line-height: 1.1875;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+  }
+
+}
+
+
+

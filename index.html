@@ -2,7 +2,8 @@
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
-    <meta name="description" content="Zadanie domowe #1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -50,6 +51,12 @@
             >
           </li>
         </ul>
+        <div class="mobile-navigation">
+          <button class="mobile-navigation__button js-open-menu">
+          <svg class="mobile-navigation__icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg></button>
+        </div>
     </div>
     </header>
     <main>
@@ -116,7 +123,7 @@
       </div>
       </section>
 
-      <section class="section">
+      <section class="section section--hide">
         <div class="container">
         <h2 class="section__title">Czym się zajmujemy</h2>
         <ul class="list">
@@ -378,7 +385,7 @@
     <div class="newsletter">
       <h4 class="newsletter__txt">ZAPISZ SIĘ DO NEWSLETTERA</h4>
       <form class="newsletter__form">
-        <label class="form-label">
+        <label>
         <input class="form-input" type="email" name="email" placeholder="E-mail">
         <button class="form-btn" type="submit">
           <h4 class="form-btn__txt">Zapisz się</h4>
@@ -391,6 +398,32 @@
     </div>
     </div>
     </footer>
+
+
+    <div class="hamburger js-menu-container">
+      <button class="hamburger__close-btn js-close-menu">
+      <svg class="hamburger__x"><use href="./images/sprite.svg#x"></use></svg></button>
+      <div class="hamburger-list-container">
+      <ul>
+        <li class="hamburger-list-container__item">
+          <a href="index.html" class="hamburger-list-container__link hamburger-list-container__link--active">Agencja</a></li>
+        <li class="hamburger-list-container__item"><a href="portfolio.html" class="hamburger-list-container__link">Portfolio</a></li>
+        <li class="hamburger-list-container__item"><a href="#"  class="hamburger-list-container__link">Kontakt</a></li>
+      </ul>
+      <ul>
+        <li class="hamburger-list-container__item--first"><a href="tel:+48111111111" class="hamburger-list-container__link hamburger-list-container__link--phone">+48 111 111 111</a></li>
+        <li class="hamburger-list-container__item--second"><a href="mailto:info@devstudio.com" class="hamburger-list-container__link hamburger-list-container__link--mail">info@devstudio.com</a></li>
+      </ul>
+      </div>
+      <ul class="hamburger-social">
+        <li class="hamburger-social__item">Instagram</li>
+        <li class="hamburger-social__item">Twitter</li>
+        <li class="hamburger-social__item">Facebook</li>
+        <li>LinkedIn</li>
+      </ul>
+    </div>
+
+
     
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-content">

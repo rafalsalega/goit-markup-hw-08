@@ -1,5 +1,12 @@
+// Mobile styles
+
 .section {
-    padding: 94px 0px; 
+  padding-top: 60px;
+  align-items: center;
+
+  &--hide {
+    display: none;  
+  }
 
 &--team {
     background-color: var(--white-grey);
@@ -10,4 +17,28 @@ font-size: 36px;
 line-height: 1.166;
 text-align: center;
 }
+}
+
+// Desktop styles
+
+@media screen and (min-width: 1200px) {
+
+    .section {
+        padding: 94px 0px; 
+
+
+
+    &--team {
+        background-color: var(--white-grey);
+    }
+    
+    &__title {
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    }
+    }
+.section {
+    padding-bottom: 94px;
+    } 
 }

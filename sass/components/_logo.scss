@@ -1,5 +1,54 @@
+// // Mobile styles
+@media screen and (max-width: 767px) {
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin: 16px 0 16px 15px;
+  
+  &--dark-theme {
+    color: var(--black);
+  }
+  &--white-theme {
+    color: var(--white)
+  }
+  
+  &__txt-web {
+    color: var(--blue);
+  }
+}
 
-.logo {
+}
+// Tablet styles
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.19;
+    text-decoration: none;
+    margin: 26px 0 26px 15px;
+  
+  &--dark-theme {
+    color: var(--black);
+  }
+  &--white-theme {
+    color: var(--white)
+  }
+    &__txt-web {
+    color: var(--blue);
+  }
+}
+
+ }
+
+// //Desktop styles
+
+@media screen and (min-width: 1200px) {
+  .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -19,3 +68,6 @@
     color: var(--blue);
   }
 }
+
+}
+

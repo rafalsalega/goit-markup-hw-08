@@ -1,47 +1,158 @@
 /* Features */
-    
-  .features-item {
-      margin-right: 20px;
-      font-size: 14px;
-      width: 270px;
-    
-    &__box {
-    background-color: var(--white-grey);
-    height: 120px;
-    width: 270px;
-    left: 215px;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-      
-      &--antenna {
-        width: 65.32px;
-        height: 70px
-      }
-      &--clock {
-        width: 66.96px;
-        height: 70px
-      }
-      &--diagram {
-        width: 53.69px;
-        height: 70px
-      }
-      &--astronaut {
-        width: 54.83px;
-        height: 60.66px
-      }
-    }
+ 
+// // Mobile styles
+@media screen and (max-width: 767px) {
+.features-item {
+  font-size: 14px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px 0 15px;
 
-    &__tittle {
-    
-    line-height: 1.42;
-    font-weight: bold;
-    font-style: normal;
-    letter-spacing: 0.03em;
-    }
+&__box {
+background-color: var(--white-grey);
+height: 120px;
+width: 450px;
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
   
-    &__text {
-      color: var(--grey);
+  &--antenna {
+    width: 70px;
+    height: 70px
+  }
+  &--clock {
+    width: 66.96px;
+    height: 70px
+  }
+  &--diagram {
+    width: 70px;
+    height: 70px
+  }
+  &--astronaut {
+    width: 70px;
+    height: 70px
+  }
+}
+
+&__tittle {
+
+line-height: 1.42;
+font-weight: bold;
+font-style: normal;
+letter-spacing: 0.03em;
+}
+
+&__text {
+  color: var(--grey);
+}
+}
+}
+// Tablet styles
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-item {
+    font-size: 14px;
+    width: 354px;
+    margin: 0;
+    align-items: baseline;
+  
+  &__box {
+  background-color: var(--white-grey);
+  height: 120px;
+  width: 354px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+    
+    &--antenna {
+      width: 70px;
+      height: 70px
+    }
+    &--clock {
+      width: 70px;
+      height: 70px
+    }
+    &--diagram {
+      width: 70px;
+      height: 70px
+    }
+    &--astronaut {
+      width: 70px;
+      height: 70px
     }
   }
+
+  &__tittle {
+  
+  line-height: 1.42;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 0;
+  }
+
+  &__text {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: var(--grey);
+  }
+}
+
+}
+
+// //Desktop styles
+
+@media screen and (min-width: 1200px) {
+  .features-item {
+    font-size: 14px;
+    width: 270px;
+  
+  &__box {
+  background-color: var(--white-grey);
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    
+    &--antenna {
+      width: 65.32px;
+      height: 70px
+    }
+    &--clock {
+      width: 66.96px;
+      height: 70px
+    }
+    &--diagram {
+      width: 53.69px;
+      height: 70px
+    }
+    &--astronaut {
+      width: 54.83px;
+      height: 60.66px
+    }
+  }
+
+  &__tittle {
+  
+  line-height: 1.42;
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  }
+
+  &__text {
+    color: var(--grey);
+  }
+}
+
+}
+
+

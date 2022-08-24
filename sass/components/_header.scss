@@ -1,4 +1,49 @@
-.header {
-  height: 80px;
-  border-bottom: 1px solid var(--white-grey);
+// // Mobile styles
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+    border-bottom: 1px solid var(--white-grey);
+  }
+
+  .mobile-navigation{
+
+  }
+  .mobile-navigation__button {
+
+  } 
+  .js-open-menu {
+
+  }
+  .mobile-navigation__icon {
+
+  }
+
 }
+// Tablet styles
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .mobile-navigation{
+display: none;
+  }
+  .header {
+    height: 80px;
+    border-bottom: 1px solid var(--white-grey);
+  }
+ }
+
+// //Desktop styles
+
+@media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+    border-bottom: 1px solid var(--white-grey);
+  }
+  .mobile-navigation{
+    display: none;
+
+  }
+
+}
+
+
+
